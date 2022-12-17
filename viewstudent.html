@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>View Students</title>
+  </head>
+  <body>
+    <h1>View Students</h1>
+    <button onclick="window.location.href='/addstudent'">Add Student</button>
+    <br />
+    <br />
+    {% for student in students %}
+    <div>
+      <b>Name:</b>{{student.name}} <br />
+      <b>RegNo:</b>{{student.regno}} <br />
+      <b>Dept:</b>{{student.dept}} <br />
+      <b>Year:</b>{{student.year}} <br />
+      <b>Email:</b>{{student.email}} <br />
+    </div>
+    <br />
+    {%endfor%}
+  </body>
+</html>
